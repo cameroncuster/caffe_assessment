@@ -51,7 +51,9 @@ understandable and clean code.
 
 Caffe's emphasis on good software development practices is well reflected in
 the commit and issue logs. All pull-requests are 'verified' and all commits
-point to a specific change in the application. Everything is accounted for in the
+point to a specific change in the application. Issues resemble the commit log in
+their reliability because they are very specific with detailed solutions
+which are documented in their entirety. Everything is accounted for in the
 issue and commit logs which accentuates software reliability. The documentation
 of the software alone is a reason to use the Caffe software in the project.
 
