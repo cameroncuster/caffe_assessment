@@ -128,6 +128,9 @@ fine-tuning the software for specific application, the transferability of Caffe
 features across various software applications, the Caffe support and community,
 and the design and development practices for the software product.
 
+Caffe is maintained frequently by both contributors and software developers,
+making the source code well-supported and reliable.
+
 The Caffe software is well-supported and offers multiple platforms to connect
 with the community and ask questions. The software also leverages a well-written
 tutorial allowing users to build and install the application quickly. One of the
