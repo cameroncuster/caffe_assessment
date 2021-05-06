@@ -46,13 +46,6 @@ minds,” so use your best judgement to write the clearest code for your
 particular case." The Caffe developers clearly made the decision to prioritize
 understandable and clean code.
 
-Caffe's emphasis on good software development practices is well reflected in
-the commit and issue logs. All pull-requests are 'verified' and all commits
-point to a specific change in the application. Issues resemble the commit log in
-their reliability because they are very specific with detailed solutions
-which are documented in their entirety. Everything is accounted for in the
-issue and commit logs which accentuates software reliability.
-
 The official documentation is supported by Jekyll and can be made with
 
 ```
@@ -66,14 +59,13 @@ http://0.0.0.0:4000
 ```
 
 Although the instructions for building the documentation are clear, I was unable
-to actually view the documentation.
+to actually view the documentation in my environment, perhaps due to unspecified
+dependencies. 
 
 Tutorials and examples are documented close to where they live allowing for
 the documentation to be very accessible. The examples provide a step by step
 process for using the software among a variety of applications. The tutorial
-gives the same level of attention and detail to using Caffe. The software was
-developed with an eye for detail which is a strong indicator of high quality
-software.
+gives the same level of attention and detail to using Caffe.
 
 While the Caffe team claims to keep tutorials and examples documented close to
 where they live there is little to no internal documentation found in the Caffe
@@ -101,7 +93,7 @@ typo was the addition of a "clip layer" to the software on Aug. 17, 2018.
 linked in the
 [install documentation](http://caffe.berkeleyvision.org/installation.html)
 - Building on Windows appears to be impossible as the CUDNN8 software is no
-longer supported.
+longer supported
 
 2. 1 day to make and run test suite
 - Tests can not be made because the Docker version used by the application and
@@ -112,11 +104,11 @@ make runtest
 ```
 
 3. 1 week to integrate with my application
-- I do not think Caffe could be integrated successfully with any software
-application as the software is no longer supported by it's dependencies or
-platforms. I found a blog post on the Caffe community page describing how the
-software can be built with external packages, but also could not get the
-external packages to work.
+- Caffe could be integrated successfully with any software application as the
+software is no longer supported by it's dependencies or platforms
+- Found a blog post on the Caffe community page describing how the software
+can be built with external packages, but also could not get the external
+packages to work
 
 ## Support ##
 
