@@ -69,8 +69,12 @@ and the documentation can be viewed with
 http://0.0.0.0:4000
 ---
 
-- Tutorials and examples are documented close to where they live allowing for
-the documentation to be very accessible
+Tutorials and examples are documented close to where they live allowing for
+the documentation to be very accessible. The examples provide a step by step
+process for using the software among a variety of applications. The tutorial
+gives the same level of attention and detail to using Caffe. The software was
+developed with an eye for detail which is a strong indicator of high quality
+software.
 
 ## Ease of use ##
 1. 1 hour clone and use the application
