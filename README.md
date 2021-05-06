@@ -21,8 +21,18 @@ software is working as intended, and without fault.
 
 ## Ease of use ##
 1. 1 hour clone and use the application
+- A detailed write-up about the install and build process of the application is
+linked in the
+[install documentation](http://caffe.berkeleyvision.org/installation.html)
+
 2. 1 day to make and run test suite
+- cloning the application and making the tests passes is a well-documented
+process which can be completed in under an hour on most of the platforms because
+the installing and build process is documented
+
 3. 1 week to integrate with my application
+- I would estimate with accuracy and precision that (depending on the project)
+Caffe could be easily integrated with most projects
 
 ## Support ##
 Community support is widely available for the Caffe software with a Gitter
