@@ -92,16 +92,14 @@ typo was the addition of a "clip layer" to the software on Aug. 17, 2018.
 - A detailed write-up about the install and build process of the application is
 linked in the
 [install documentation](http://caffe.berkeleyvision.org/installation.html)
+- The write appears to be out of data, as I was unsuccessful in cloning and 
+building the application (pre-compiled version work)
 - Building on Windows appears to be impossible as the CUDNN8 software is no
 longer supported
 
 2. 1 day to make and run test suite
 - Tests can not be made because the Docker version used by the application and
-the CUDNN8 software is no longer supported by Caffe
-
-```
-make runtest
-```
+the CUDNN8 software is not by Caffe
 
 3. 1 week to integrate with my application
 - Caffe could be integrated successfully with any software application as the
@@ -122,6 +120,20 @@ the community channels many of the supported platforms appear to have grown out
 date due to lack of maintenance and are losing support (specifically Windows OS).
 
 ## Testing ##
+Testing for Caffe is found under the sub-directory src/caffe/test. The magnitude
+of files and documentation indicates the test suite is comprehensive, but with
+further review the tests are found to have no internal documentation, are
+unreadable, and non-descriptive. Here is an example of some of the source
+found in the test files.
+
+![Unreadable Test](undreadableTest.png)
+
+The tests may be comprehensive, but as described in "ease of use," I had no
+success building the tests and can not read the source to identify if the tests
+behave as they should in the application. For example, I can not make the tests,
+change a line of code, and have a test which fails and points me to the line of
+code changed to induce the failing test. The test suite is evidence of poor
+software development, and does not give reason to include Caffe in my project.
 
 ## Dependencies ##
 - Docker integration is Version 6 while the latest Docker release is version 8
