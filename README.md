@@ -17,7 +17,6 @@ redistribution and modification.
 software is working as intended, and without fault.
 
 ## Documentation ##
-- Outline the issues/commit-log
 - REVIEW THE JEKYLL DOCUMENTATION
 
 The documentation contains descriptive information about the entire application
@@ -59,15 +58,15 @@ of the software alone is a reason to use the Caffe software in the project.
 
 The official documentation is supported by Jekyll and can be made with
 
----
+```
 scripts/build_docs.sh
----
+```
 
 and the documentation can be viewed with
 
----
+```
 http://0.0.0.0:4000
----
+```
 
 Tutorials and examples are documented close to where they live allowing for
 the documentation to be very accessible. The examples provide a step by step
@@ -91,9 +90,9 @@ linked in the
 process which can be completed in under an hour on most of the platforms because
 the installing and build process is documented making the tests is as simple as
 
----
-% make runtest
----
+```
+make runtest
+```
 
 3. 1 week to integrate with my application
 - I would estimate with accuracy and precision that (depending on the project)
