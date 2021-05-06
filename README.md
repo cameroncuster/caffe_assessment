@@ -18,6 +18,53 @@ software is working as intended, and without fault.
 
 ## Documentation ##
 - Outline the issues/commit-log
+- view the DOCS
+
+The documentation contains descriptive information about the entire application
+from making and building the application on various platforms to developing and
+contributing to the software to outlining the multitude of applications for the
+software.
+
+Caffe is equipped with a well-written tutorial describing everything from
+installing and building the software to using and integrating the software with
+my application.
+
+Contribution to Caffe is also well-outlined in the documentation. Contribution
+is laid out nicely for all developers by all requirements to contribute to the
+software. The requirements for contribution even specify versioning, feature
+branching, rebasing practices, and **testing**. This emphasizes that Caffe has
+utilized good software development practices, and as a result has produced a
+reliable product which is highly reputable because of verioning, branching
+techniques, and required testing. Coding style and technique are also emphasized
+in contribution. For example Caffe follows
+[Google C++ style](https://google.github.io/styleguide/cppguide.html) and
+[Google python style](https://google.github.io/styleguide/pyguide.html) with
+[PEP 8](https://legacy.python.org/dev/peps/pep-0008/). Evidently the coding
+standard, software development practices, and requirements for contribution are
+satisfactory for considering Caffe to be included in the project.
+
+Caffe even emphasizes their care for code which reads like well-written prose,
+in saying, "Remember that “a foolish consistency is the hobgoblin of little
+minds,” so use your best judgement to write the clearest code for your
+particular case." The Caffe developers clearly made the decision to prioritize
+understandable and clean code.
+
+The official documentation is supported by Jekyll and can be made with
+
+---
+scripts/build_docs.sh
+---
+
+and the documentation can be viewed with
+
+---
+http://0.0.0.0:4000
+---
+
+REVIEW THE JEKYLL DOCUMENTATION
+
+- Tutorials and examples are documented close to where they live allowing for
+the documentation to be very accessible
 
 ## Ease of use ##
 1. 1 hour clone and use the application
@@ -28,7 +75,11 @@ linked in the
 2. 1 day to make and run test suite
 - cloning the application and making the tests passes is a well-documented
 process which can be completed in under an hour on most of the platforms because
-the installing and build process is documented
+the installing and build process is documented making the tests is as simple as
+
+---
+% make runtest
+---
 
 3. 1 week to integrate with my application
 - I would estimate with accuracy and precision that (depending on the project)
