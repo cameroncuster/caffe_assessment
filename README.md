@@ -7,7 +7,7 @@ community contributors.
 ## Licensing ##
 License is the BSD 2-Clause license.
 
-The official ![BSD 2-Clause license](LICENSE)
+The official [BSD 2-Clause license](LICENSE)
 
 - The BSD 2-Clause license is a Permissive License which allows the author to
 retain copyright for the purpose of disclaiming warranty and requiring
