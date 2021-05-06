@@ -17,8 +17,6 @@ redistribution and modification.
 software is working as intended, and without fault.
 
 ## Documentation ##
-- REVIEW THE JEKYLL DOCUMENTATION
-
 The documentation contains descriptive information about the entire application
 from making and building the application on various platforms to developing and
 contributing to the software to outlining the multitude of applications for the
