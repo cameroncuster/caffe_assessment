@@ -59,8 +59,8 @@ http://0.0.0.0:4000
 ```
 
 Although the instructions for building the documentation are clear, I was unable
-to actually view the documentation in my environment, perhaps due to unspecified
-dependencies. 
+to view the documentation in my environment, perhaps due to unspecified
+dependencies.
 
 Tutorials and examples are documented close to where they live allowing for
 the documentation to be very accessible. The examples provide a step by step
@@ -71,12 +71,12 @@ While the Caffe team claims to keep tutorials and examples documented close to
 where they live there is little to no internal documentation found in the Caffe
 source code. The code appears to have lots of tests written for it in the
 source, but there is no documentation describing what any of the tests are
-actually testing. At the surface the project appears to be well documented and
+testing. At the surface the project appears to be well documented and
 satisfactory of coding standard, but seeing the actual source code the Caffe
 project does not appear to be well-documented. The claims made by the Caffe team
 about their standards for contribution, coding style, and testing give the
-appearance of a great software product; however, the source code yeilds a
-different appearance. The code in the source is not well-documented, descirbed,
+appearance of a great software product; however, the source code yields a
+different appearance. The code in the source is not well-documented, described,
 or human readable. All of the code is difficult to understand and not "self-
 describing."
 
@@ -111,6 +111,15 @@ can be built with external packages, but also could not get the external
 packages to work
 
 ## Support ##
+While the Caffe product appears to be well supported via multiple community
+channels, the channels are not well monitored and recent chats indicate issues
+with maintenance in the software. With further review the commit logs and issue
+logs reinforce my suspicion about the software not being well maintained. The
+version of Docker being used in Caffe is listed as 6 while the most recent
+release of Docker is version 8, which indicates Caffe is more than a few years
+out of date as Docker version 8 released in 2013. With further investigation of
+the community channels many of the supported platforms appear to have grown out
+date due to lack of maintenance and are losing support (specifically Windows OS).
 
 ## Testing ##
 
@@ -150,6 +159,6 @@ practically been discontinued. On the surface the software appears to have a
 strong community with supporting documentation and good software development
 standards, but realistically the software is not-well maintained, has no
 internal documentation, and is full of unreadable code. Using the software to
-integrate into a senior design project would be a poor design desicion and
-result in a lot of unecessary headache for the project as indicated by a few of
+integrate into a senior design project would be a poor design decision and
+result in a lot of unnecessary headache for the project as indicated by a few of
 the recent chats in the community channel.
