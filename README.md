@@ -53,8 +53,7 @@ the commit and issue logs. All pull-requests are 'verified' and all commits
 point to a specific change in the application. Issues resemble the commit log in
 their reliability because they are very specific with detailed solutions
 which are documented in their entirety. Everything is accounted for in the
-issue and commit logs which accentuates software reliability. The documentation
-of the software alone is a reason to use the Caffe software in the project.
+issue and commit logs which accentuates software reliability.
 
 The official documentation is supported by Jekyll and can be made with
 
@@ -68,6 +67,9 @@ and the documentation can be viewed with
 http://0.0.0.0:4000
 ```
 
+Although the instructions for building the documentation are clear, I was unable
+to actually view the documentation.
+
 Tutorials and examples are documented close to where they live allowing for
 the documentation to be very accessible. The examples provide a step by step
 process for using the software among a variety of applications. The tutorial
@@ -75,99 +77,55 @@ gives the same level of attention and detail to using Caffe. The software was
 developed with an eye for detail which is a strong indicator of high quality
 software.
 
+While the Caffe team claims to keep tutorials and examples documented close to
+where they live there is little to no internal documentation found in the Caffe
+source code. The code appears to have lots of tests written for it in the
+source, but there is no documentation describing what any of the tests are
+actually testing. At the surface the project appears to be well documented and
+satisfactory of coding standard, but seeing the actual source code the Caffe
+project does not appear to be well-documented. The claims made by the Caffe team
+about their standards for contribution, coding style, and testing give the
+appearance of a great software product; however, the source code yeilds a
+different appearance. The code in the source is not well-documented, descirbed,
+or human readable. All of the code is difficult to understand and not "self-
+describing."
+
 - The code appears to be littered with typos as many of the commit messages
 indicate that simple typing errors are being corrected with code spell checking
 software
+
+- The last actual update to the software which was not a pull request to fix a
+typo was the addition of a "clip layer" to the software on Aug. 17, 2018.
 
 ## Ease of use ##
 1. 1 hour clone and use the application
 - A detailed write-up about the install and build process of the application is
 linked in the
 [install documentation](http://caffe.berkeleyvision.org/installation.html)
+- Building on Windows appears to be impossible as the CUDNN8 software is no
+longer supported.
 
 2. 1 day to make and run test suite
-- cloning the application and making the tests passes is a well-documented
-process which can be completed in under an hour on most of the platforms because
-the installing and build process is documented making the tests is as simple as
+- Tests can not be made because the Docker version used by the application and
+the CUDNN8 software is no longer supported by Caffe
 
 ```
 make runtest
 ```
 
 3. 1 week to integrate with my application
-- I would estimate with accuracy and precision that (depending on the project)
-Caffe could be easily integrated with most projects
+- I do not think Caffe could be integrated successfully with any software
+application as the software is no longer supported by it's dependencies or
+platforms. I found a blog post on the Caffe community page describing how the
+software can be built with external packages, but also could not get the
+external packages to work.
 
 ## Support ##
-Community support is widely available for the Caffe software with a Gitter
-online chat service available for users of the Caffe software. The chat service
-is well monitored and easily accessible in the documentation (README) of the
-Caffe project repository. A Caffe users group is also available for Gmail users,
-which details changes and updates to the Caffe software along with an abundance
-of questions about the software with developer and contributor answers.
-
-In addition to the variety of community support available for the software users
-is a running document of Issues. Which are each meticulously documented with
-navigable commit logs and updated information about the software and recent
-changes.
-
-The quality of the documentation along with the support allows users to easily
-identify how the product can be used and what platforms the product is available
-for, and what extensions can be used to make the product compatible with your
-platform. Platforms Caffe advertises to be compatible with include: Intel
-(optimized for CPU and multi-node computing), OpenCL for AMD or Intel devices,
-and Windows Caffe.
-
-A tutorial detailing the build and deployment of the product allows users to
-quickly and easily get Caffe up and running with their support for a variety of
-platforms. The Caffe tutorial also includes a tour of the product which
-accelerates the time and training required for integrating the product with your
-application. The link to the second Caffe tutorial returns a 404 (Not Found).
-This is a result of lack of attention to detail which may or may not indicate
-the same attention and care in the source code. The incorrect link on the GitHub
-tutorial page may also be result of the Google API incorrectly handling the
-browsers queries as the tutorials are Google Slides presentations. The first
-tutorial is well-formatted, easy to follow, and accessible from the README.
-
-The tutorial addresses reasons to use the Caffe product, the technology utilized
-by Caffe, the companies who use Caffe (known as "Caffinated Companies"), the
-fine-tuning the software for specific application, the transferability of Caffe
-features across various software applications, the Caffe support and community,
-and the design and development practices for the software product.
-
-Caffe is maintained frequently by both contributors and software developers,
-making the source code well-supported and reliable.
-
-The Caffe software is well-supported and offers multiple platforms to connect
-with the community and ask questions. The software also leverages a well-written
-tutorial allowing users to build and install the application quickly. One of the
-two tutorial URLs in the Caffe tutorial README was not working properly, but
-this does not appear to be a reflection of Caffe's support or software
-development practices. Caffe is a well-supported application which is a reason
-to integrate the software into your own product.
 
 ## Testing ##
-Tests integrated with Google's Testing framework (Google Test) can be found in
-the source in the gtest directory. All of the tests in the source are described
-in their entirety and use meaningful variable, method, and class names (design
-patterns) to make the tests understandable and readable. The readability of the
-tests is the key difference between software and good software. Anyone can write
-tests (not everyone does), but good software is tested with human readable
-tests, which is precisely what Caffe is equipped with. Additionally the tests
-are easily made which provides the user security and understanding of the
-software.
-
-The main gtest file is ~10,000 lines long, which Robert C. Martin author of
-Clean Code warns against in one of his many "Clean Code" talks. Ideally files
-should be short and precise with descriptive names unlike "gtest-all.cpp" A set
-of files containing the tests each with a descriptive name describing the subset
-of tests would be most beneficial to the user. The tests are so well-documented
-written with self-describing code which reads like "well-written prose" as
-Robert C. Martin says that the organization of the tests themselves does not
-negate the quality of the software.
 
 ## Dependencies ##
-- Emphasize the integration of Docker in the Caffe project
+- Docker integration is Version 6 while the latest Docker release is version 8
 
 Dependencies defined in the python/requirements.txt
 - cython / cython
@@ -197,12 +155,11 @@ Dependencies defined in the web_demo/requirements.txt
 - pallets / werkzeug
 
 ## Conclusion ##
-I would include Caffe in my Senior Design Project because Caffe has strong
-supporting documentation, a well described test suite with human readable code,
-long-term community support and maintenence, and passes the "3 hurdles test."
-Caffe was developed with good software practices and meets the standard for
-professional software. The software is not **perfect**, but it is well
-maintained which is critical to a successful software development project. I
-would integrate Caffe into any professional project, and recommend Caffe to
-other developers. Caffe has successfully demonstrated the benefit of
-good software development practices.
+I would not include Caffe in my senior design project because the software has
+practically been discontinued. On the surface the software appears to have a
+strong community with supporting documentation and good software development
+standards, but realistically the software is not-well maintained, has no
+internal documentation, and is full of unreadable code. Using the software to
+integrate into a senior design project would be a poor design desicion and
+result in a lot of unecessary headache for the project as indicated by a few of
+the recent chats in the community channel.
