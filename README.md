@@ -76,6 +76,10 @@ gives the same level of attention and detail to using Caffe. The software was
 developed with an eye for detail which is a strong indicator of high quality
 software.
 
+- The code appears to be littered with typos as many of the commit messages
+indicate that simple typing errors are being corrected with code spell checking
+software
+
 ## Ease of use ##
 1. 1 hour clone and use the application
 - A detailed write-up about the install and build process of the application is
@@ -192,3 +196,14 @@ Dependencies defined in the web_demo/requirements.txt
 - yaml / pyyaml
 - tornadowed / tornado
 - pallets / werkzeug
+
+## Conclusion ##
+I would include Caffe in my Senior Design Project because Caffe has strong
+supporting documentation, a well described test suite with human readable code,
+long-term community support and maintenence, and passes the "3 hurdles test."
+Caffe was developed with good software practices and meets the standard for
+professional software. The software is not **perfect**, but it is well
+maintained which is critical to a successful software development project. I
+would integrate Caffe into any professional project, and recommend Caffe to
+other developers. Caffe has successfully demonstrated the benefit of
+good software development practices.
