@@ -17,6 +17,7 @@ redistribution and modification.
 software is working as intended, and without fault.
 
 ## Documentation ##
+- Outline the issues/commit-log
 
 ## Ease of use ##
 1. 1 hour clone and use the application
@@ -45,7 +46,7 @@ and Windows Caffe.
 
 A tutorial detailing the build and deployment of the product allows users to
 quickly and easily get Caffe up and running with their support for a variety of
-platforms.  The Caffe tutorial also includes a tour of the product which
+platforms. The Caffe tutorial also includes a tour of the product which
 accelerates the time and training required for integrating the product with your
 application. The link to the second Caffe tutorial returns a 404 (Not Found).
 This is a result of lack of attention to detail which may or may not indicate
@@ -59,6 +60,14 @@ by Caffe, the companies who use Caffe (known as "Caffinated Companies"), the
 fine-tuning the software for specific application, the transferability of Caffe
 features across various software applications, the Caffe support and community,
 and the design and development practices for the software product.
+
+The Caffe software is well-supported and offers multiple platforms to connect
+with the community and ask questions. The software also leverages a well-written
+tutorial allowing users to build and install the application quickly. One of the
+two tutorial URLs in the Caffe tutorial README was not working properly, but
+this does not appear to be a reflection of Caffe's support or software
+development practices. Caffe is a well-supported application which is a reason
+to integrate the software into your own product.
 
 ## Testing ##
 
