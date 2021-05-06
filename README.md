@@ -34,7 +34,7 @@ is laid out nicely for all developers by all requirements to contribute to the
 software. The requirements for contribution even specify versioning, feature
 branching, rebasing practices, and **testing**. This emphasizes that Caffe has
 utilized good software development practices, and as a result has produced a
-reliable product which is highly reputable because of verioning, branching
+reliable product which is highly reputable because of versioning, branching
 techniques, and required testing. Coding style and technique are also emphasized
 in contribution. For example Caffe follows
 [Google C++ style](https://google.github.io/styleguide/cppguide.html) and
@@ -48,6 +48,12 @@ in saying, "Remember that “a foolish consistency is the hobgoblin of little
 minds,” so use your best judgement to write the clearest code for your
 particular case." The Caffe developers clearly made the decision to prioritize
 understandable and clean code.
+
+Caffe's emphasis on good software development practices is well reflected in
+the commit and issue logs. All pull-requests are 'verified' and all commits
+point to a specific change in the application. Everything is accounted for in the
+issue and commit logs which accentuates software reliability. The documentation
+of the software alone is a reason to use the Caffe software in the project.
 
 The official documentation is supported by Jekyll and can be made with
 
