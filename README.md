@@ -144,8 +144,28 @@ development practices. Caffe is a well-supported application which is a reason
 to integrate the software into your own product.
 
 ## Testing ##
+Tests integrated with Google's Testing framework (Google Test) can be found in
+the source in the gtest directory. All of the tests in the source are described
+in their entirety and use meaningful variable, method, and class names (design
+patterns) to make the tests understandable and readable. The readability of the
+tests is the key difference between software and good software. Anyone can write
+tests (not everyone does), but good software is tested with human readable
+tests, which is precisely what Caffe is equipped with. Additionally the tests
+are easily made which provides the user security and understanding of the
+software.
+
+The main gtest file is ~10,000 lines long, which Robert C. Martin author of
+Clean Code warns against in one of his many "Clean Code" talks. Ideally files
+should be short and precise with descriptive names unlike "gtest-all.cpp" A set
+of files containing the tests each with a descriptive name describing the subset
+of tests would be most beneficial to the user. The tests are so well-documented
+written with self-describing code which reads like "well-written prose" as
+Robert C. Martin says that the organization of the tests themselves does not
+negate the quality of the software.
 
 ## Dependencies ##
+- Emphasize the integration of Docker in the Caffe project
+
 Dependencies defined in the python/requirements.txt
 - cython / cython
 - h5py / h5py
