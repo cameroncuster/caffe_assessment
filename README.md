@@ -126,7 +126,7 @@ further review the tests are found to have no internal documentation, are
 unreadable, and non-descriptive. Here is an example of some of the source
 found in the test files.
 
-![Unreadable Test](undreadableTest.png)
+![Unreadable Test](unreadableTest.png)
 
 The tests may be comprehensive, but as described in "ease of use," I had no
 success building the tests and can not read the source to identify if the tests
