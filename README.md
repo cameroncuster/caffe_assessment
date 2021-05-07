@@ -52,33 +52,32 @@ Contribution to Caffe is well-outlined in the documentation, and is presented
 clearly for all developers with all requirements to contribute to the software.
 The requirements for contribution even specify versioning, feature branching,
 rebasing practices, and **testing**. While the standard is acceptable, the
-source code is not. Caffe makes an emphasis on good software development
-practices, yet the only standards upheld by the application are feature
-branching and testing. Although the code has tests, the tests are not documented
-well, rendering the tests useless. Inability to understand what is being tested
-in the code is result of poor software development practices.
+source code is not. Caffe emphasizes good software development practices, yet
+the only standards upheld by the application are feature branching and testing.
+Although the code has tests, the tests are not well documented,  rendering the
+tests useless. Inability to understand what is being tested in the code is
+result of poor software development practices.
 
 While the Caffe team claims to keep tutorials and examples documented close to
-where they live there is little to no internal documentation found in the Caffe
-source code. The code appears to have lots of tests written for it in the
+where they live there exists little internal documentation found in the Caffe
+source code. The code appears to have extensive of tests written for it in the
 source, but there is no documentation describing what any of the tests are
 testing. At the surface the project appears to be well documented and
-satisfactory of coding standard, but seeing the actual source code the Caffe
-project does not appear to be well-documented. The claims made by the Caffe team
-about their standards for contribution, coding style, and testing give the
-appearance of a great software product; however, the source code yields a
-different appearance. The source code is not well-documented or human readable.
-The code is difficult to understand and would not be considered
-"self-describing" or "self-documenting."
+satisfactory of coding standard, but after seeing the actual source code the
+Caffe project does not appear to be well-documented. The claims made by the
+Caffe team about their standards for contribution, coding style, and testing
+give the appearance of a great software product; however, the source code
+contradicts the documentation. The source code is not well-documented or human
+readable, and the code is difficult to understand; therefore, Caffe's code base
+would not be considered "self-describing" or "self-documenting."
 
 The code also appears to be littered with typos, so many of the commit messages
-indicate simple typing errors are being corrected with code spell checking
-software, but the last actual update to the software which was not a pull
-request to fix a typo was the addition of a "clip layer" to the software on Aug.
-17, 2018. Over 2 years have passed since the last software update, which
-indicates not only a lack of documentation, but a lack of support.  Cafe's
-documentation does not support my inclusion of their software into my senior
-design project.
+indicate simple typing errors being corrected with code spell checking software,
+but the last actual update to the software which was not a pull request to fix a
+typo was the addition of a "clip layer" to the software on Aug. 17, 2018. Over
+2 years have passed since the last software update, which indicates not only a
+lack of documentation, but a lack of support.  Caffe's documentation does not
+support my inclusion of their software into my senior design project.
 
 ## Ease of use ##
 1. 1 hour clone and use the application
@@ -86,7 +85,7 @@ design project.
 linked in the
 [install documentation](http://caffe.berkeleyvision.org/installation.html)
 - The write-up appears to be out of date because I was unsuccessful in cloning
-and building the application (pre-compiled version work)
+and building the application (pre-compiled version works)
 - Building Caffe on Windows appears to be impossible as the CUDNN8 software
 used by Caffe is no longer supported
 
@@ -147,8 +146,8 @@ channels, the channels are not well monitored, and recent chats indicate issues
 with maintenance in the software as indicated above. With further review the
 commit logs and issue logs reinforce my suspicion about the software not being
 well maintained. The version of Docker being used in Caffe is listed as 6, but
-the most recent release of Docker is version 8, which indicates Caffe is more
-than a few years out of date as Docker version 8 released in 2013. With further
+the most recent release of Docker is version 8, which indicates Caffe is a few
+years out of date as Docker version 8 released in 2020. With further
 investigation of the community channels many of the supported platforms appear
 to have grown out date due to lack of maintenance and are losing support
 (Windows OS).
@@ -170,13 +169,11 @@ code changed to induce the failing test. The test suite is evidence of poor
 software development and does not give reason to include Caffe in my project.
 
 ## Dependencies ##
-- Docker integration is Version 6 while the latest Docker release is version 8
-
 As described in the software's dependency graph (may not be complete for
 building the project). I been unable to successfully build the software,
 potentially because of undocumented dependencies.
 
-Note: Precompiled release is stable.
+Note: Most recent pre-compiled releases are stable.
 
 Dependencies defined in the python/requirements.txt
 - cython / cython
