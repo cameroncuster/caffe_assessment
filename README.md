@@ -23,8 +23,8 @@ BSD style license.
 ## Documentation ##
 The documentation for the Caffe product is lacking. The code appears to be well
 documented on the cover because the repository is decorated with a professional
-README and a few other documentes describing the process of installing, viewing
-the documentation, building the applciation, and contributing to Caffe; however
+README and a few other documents describing the process of installing, viewing
+the documentation, building the application, and contributing to Caffe; however,
 beneath the surface in the actual source code there exists little documentation
 internally. The code is tightly compacted with no description for a new user.
 
@@ -49,11 +49,11 @@ to view the documentation in my environment, perhaps due to unspecified
 dependencies.
 
 Contribution to Caffe is well-outlined in the documentation. Contribution is
-laid out neatly for all developers by all requirements to contribute to the
+laid out neatly for all developers with all requirements to contribute to the
 software. The requirements for contribution even specify versioning, feature
 branching, rebasing practices, and **testing**. While the standard is
 acceptable, the source code is not. Caffe makes an emphasis on good software
-development practices, yet the only standards uphelp by the application are
+development practices, yet the only standards upheld by the application are
 feature branching and testing. Although the code has tests, the tests are not
 documented well, rendering the tests useless. Inability to understand what is
 being tested in the code is result of poor software development practices.
@@ -69,48 +69,89 @@ satisfactory of coding standard, but seeing the actual source code the Caffe
 project does not appear to be well-documented. The claims made by the Caffe team
 about their standards for contribution, coding style, and testing give the
 appearance of a great software product; however, the source code yields a
-different appearance. The code in the source is not well-documented, described,
-or human readable. All of the code is difficult to understand and not "self-
+different appearance. The source code is not well-documented, described, or
+human readable. All of the code is difficult to understand and not "self-
 describing."
 
-- The code appears to be littered with typos as many of the commit messages
-indicate that simple typing errors are being corrected with code spell checking
-software
-
-- The last actual update to the software which was not a pull request to fix a
-typo was the addition of a "clip layer" to the software on Aug. 17, 2018.
+The code appears to be littered with typos and many of the commit messages
+indicate simple typing errors are being corrected with code spell checking
+software, but the last actual update to the software which was not a pull
+request to fix a typo was the addition of a "clip layer" to the software on Aug.
+17, 2018. Nearly 2 years have passed since the last software update, which
+indicates not only a lack of documentation, but a lack of support.
 
 ## Ease of use ##
 1. 1 hour clone and use the application
 - A detailed write-up about the install and build process of the application is
 linked in the
 [install documentation](http://caffe.berkeleyvision.org/installation.html)
-- The write appears to be out of data, as I was unsuccessful in cloning and 
-building the application (pre-compiled version work)
-- Building on Windows appears to be impossible as the CUDNN8 software is no
-longer supported
+- The write-up appears to be out of date because I was unsuccessful in cloning
+and building the application (pre-compiled version work)
+- Building Caffe on Windows appears to be impossible as the CUDNN8 software
+used by Caffe is no longer supported
 
 2. 1 day to make and run test suite
-- Tests can not be made because the Docker version used by the application and
-the CUDNN8 software is not by Caffe
+- unable to make the test suite because configuring the dependencies of the
+software with Windows-Subsystem for Linux is very difficult as many of the
+packages are not supported
 
 3. 1 week to integrate with my application
 - Caffe could be integrated successfully with any software application as the
-software is no longer supported by it's dependencies or platforms
+software is no longer supports many of it's platforms due to lack of
+maintenance
 - Found a blog post on the Caffe community page describing how the software
 can be built with external packages, but also could not get the external
-packages to work
+packages to work; interestingly the blog post details other community members
+having issues making and building the software on various platforms.
+
+Community Channel
+
+```
+QUESTION:
+
+artyom...@gmail.com
+May 3, 2021, 3:26:49 AM (3 days ago)
+
+Does Anybody know what happened to CAFFE?
+
+I filled this pull request: https://github.com/BVLC/caffe/pull/7000 without it caffe even can't build with CUDNN8.
+
+I understand that there is no new development but is there any change of maintenance?
+
+Have anybody manages to continue some kind of updates of caffe maybe via forked repo?
+
+Artyom
+
+
+
+RESPONSE:
+
+Tamas Nemes
+May 3, 2021, 4:03:51 AM (3 days ago)
+
+Hello Artyom,
+Yes, it seems that Caffe was discontinued long ago, probably because there were too many issues and the devs couldn't keep up. But the community has managed to keep it up-to-date since than for today's software so it's possible to build Caffe for CUDA 11, CUDNN 8 and OpenCV 4. Have a look at this: https://github.com/Totemi1324/caffe-installation-guide In my opinion, this is the most detailed that you can use, it derives from this: https://qengineering.eu/install-caffe-on-ubuntu-20.04-with-opencv-4.4.html In both guides, you find the download-link for an up-to-date version of Caffe.
+Hope you succeed with the installation!
+
+Regards,
+Tamas
+```
+
+The discontinuation of Caffe explains the lack of support and overall activity
+from the developers in the project. The inability to use the product is likely to
+result in not including Caffe in my senior design project.
 
 ## Support ##
 While the Caffe product appears to be well supported via multiple community
 channels, the channels are not well monitored and recent chats indicate issues
-with maintenance in the software. With further review the commit logs and issue
-logs reinforce my suspicion about the software not being well maintained. The
-version of Docker being used in Caffe is listed as 6 while the most recent
-release of Docker is version 8, which indicates Caffe is more than a few years
-out of date as Docker version 8 released in 2013. With further investigation of
-the community channels many of the supported platforms appear to have grown out
-date due to lack of maintenance and are losing support (specifically Windows OS).
+with maintenance in the software as indicated above. With further review the
+commit logs and issue logs reinforce my suspicion about the software not being
+well maintained. The version of Docker being used in Caffe is listed as 6 while
+the most recent release of Docker is version 8, which indicates Caffe is more
+than a few years out of date as Docker version 8 released in 2013. With further
+investigation of the community channels many of the supported platforms appear
+to have grown out date due to lack of maintenance and are losing support
+(specifically Windows OS).
 
 ## Testing ##
 Testing for Caffe is found under the sub-directory src/caffe/test. The magnitude
@@ -130,6 +171,12 @@ software development, and does not give reason to include Caffe in my project.
 
 ## Dependencies ##
 - Docker integration is Version 6 while the latest Docker release is version 8
+
+As described in the software's dependency graph (may not be complete for
+building the project). I been unable to successfully build the software,
+potentially because of undocumented dependencies.
+
+Note: Precompiled release is stable.
 
 Dependencies defined in the python/requirements.txt
 - cython / cython
