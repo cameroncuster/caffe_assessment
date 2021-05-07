@@ -11,40 +11,26 @@ The official [BSD 2-Clause license](LICENSE)
 
 - The BSD 2-Clause license is a Permissive License which allows the author to
 retain copyright for the purpose of disclaiming warranty and requiring
-attribution of their software. The Permissive License allows for any form
-redistribution and modification.
+attribution of their software
+- The Permissive License allows for any form redistribution and modification
 - The license prevents me from relying on a software warranty to ensure the
-software is working as intended, and without fault.
+software is working as intended and without fault
+
+Caffe's license does not inhibit me from including their software in my senior
+design project, but I will consider the ramifications of using software with a
+BSD style license.
 
 ## Documentation ##
-The documentation contains descriptive information about the entire application
-from making and building the application on various platforms to developing and
-contributing to the software to outlining the multitude of applications for the
-software.
+The documentation for the Caffe product is lacking. The code appears to be well
+documented on the cover because the repository is decorated with a professional
+README and a few other documentes describing the process of installing, viewing
+the documentation, building the applciation, and contributing to Caffe; however
+beneath the surface in the actual source code there exists little documentation
+internally. The code is tightly compacted with no description for a new user.
 
-Caffe is equipped with a well-written tutorial describing everything from
-installing and building the software to using and integrating the software with
-my application.
-
-Contribution to Caffe is also well-outlined in the documentation. Contribution
-is laid out nicely for all developers by all requirements to contribute to the
-software. The requirements for contribution even specify versioning, feature
-branching, rebasing practices, and **testing**. This emphasizes that Caffe has
-utilized good software development practices, and as a result has produced a
-reliable product which is highly reputable because of versioning, branching
-techniques, and required testing. Coding style and technique are also emphasized
-in contribution. For example Caffe follows
-[Google C++ style](https://google.github.io/styleguide/cppguide.html) and
-[Google python style](https://google.github.io/styleguide/pyguide.html) with
-[PEP 8](https://legacy.python.org/dev/peps/pep-0008/). Evidently the coding
-standard, software development practices, and requirements for contribution are
-satisfactory for considering Caffe to be included in the project.
-
-Caffe even emphasizes their care for code which reads like well-written prose,
-in saying, "Remember that “a foolish consistency is the hobgoblin of little
-minds,” so use your best judgement to write the clearest code for your
-particular case." The Caffe developers clearly made the decision to prioritize
-understandable and clean code.
+Caffe claims to have created some official documentation supported by Jekyll for
+the source, but I was not able to replicate the process described in the docs
+as:
 
 The official documentation is supported by Jekyll and can be made with
 
@@ -62,10 +48,17 @@ Although the instructions for building the documentation are clear, I was unable
 to view the documentation in my environment, perhaps due to unspecified
 dependencies.
 
-Tutorials and examples are documented close to where they live allowing for
-the documentation to be very accessible. The examples provide a step by step
-process for using the software among a variety of applications. The tutorial
-gives the same level of attention and detail to using Caffe.
+Contribution to Caffe is well-outlined in the documentation. Contribution is
+laid out neatly for all developers by all requirements to contribute to the
+software. The requirements for contribution even specify versioning, feature
+branching, rebasing practices, and **testing**. While the standard is
+acceptable, the source code is not. Caffe makes an emphasis on good software
+development practices, yet the only standards uphelp by the application are
+feature branching and testing. Although the code has tests, the tests are not
+documented well, rendering the tests useless. Inability to understand what is
+being tested in the code is result of poor software development practices.
+Caffe's documentation does not support my inclusion of their software into my
+senior design project.
 
 While the Caffe team claims to keep tutorials and examples documented close to
 where they live there is little to no internal documentation found in the Caffe
